@@ -49,7 +49,7 @@ function getRandomQuote() {
         timerElement.innerText = getTimerTime()
       },1000)
   }
-  functiongetTimerTime(){
+  function getTimerTime() {
     return Math.floor((new Date() - startTime) / 1000)
   }
 
