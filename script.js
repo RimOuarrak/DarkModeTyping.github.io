@@ -1,4 +1,3 @@
-const RANDOM_QUOTE_API_URL = JSON.parse(Get('http://api.quotable.io/random'));
 const quoteDisplayElement = document.getElementById('quoteDisplay');
 const quoteInputElement = document.getElementById('quoteInput');
 const timerElement = document.getElementById('timer');
@@ -42,7 +41,7 @@ var checkbox = document.querySelector('input[name=theme]');
             if(correct) renderNewQuote();
         })
         function getRandomQuote() {
-              return fetch(RANDOM_QUOTE_API_URL)
+              return fetch('http://api.quotable.io/random')
               .then(Response => Response.json())
               .then(data => data.content)
           }
