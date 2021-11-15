@@ -41,7 +41,7 @@ var checkbox = document.querySelector('input[name=theme]');
             if(correct) renderNewQuote();
         })
         function getRandomQuote() {
-              return fetch('https://www.api.quotable.io/random')
+              return fetch('http://www.api.quotable.io/random')
               .then(Response => Response.json())
               .then(data => data.content)
           }
