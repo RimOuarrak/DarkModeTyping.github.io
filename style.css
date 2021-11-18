@@ -62,6 +62,7 @@ label {
 	text-indent: -9999px;
 	width: 52px;
 	height: 27px;
+	top: -1rem;
 	background: grey;
 	float: right;
 	border-radius: 100px;
